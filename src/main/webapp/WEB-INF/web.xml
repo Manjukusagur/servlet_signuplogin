@@ -1,0 +1,68 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+ 
+  <init-param>
+  <param-name>cname</param-name>
+  <param-value>jsp</param-value>
+  </init-param>
+  
+  <servlet>
+  <servlet-name>a</servlet-name>
+  <servlet-class>controller.Signup</servlet-class>
+ 
+ 
+  <init-param>
+  <param-name>cname</param-name>
+  <param-value>jsp</param-value>
+  </init-param>
+  
+  <init-param>
+  <param-name>cbranch</param-name>
+  <param-value>Raj</param-value>
+  </init-param>
+   </servlet>
+  
+  <servlet>
+  <servlet-name>b</servlet-name>
+  <servlet-class>controller.Login</servlet-class>
+   <init-param>
+  <param-name>cname</param-name>
+  <param-value>banglore</param-value>
+  </init-param>
+  
+  <init-param>
+  <param-name>cbranch</param-name>
+  <param-value>Raj</param-value>
+  </init-param>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  <servlet-name>a</servlet-name>
+	<url-pattern>/manju</url-pattern>
+  
+  
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>b</servlet-name>
+  <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+ 
+  <welcome-file-list>
+  <welcome-file>Login.html</welcome-file>
+  </welcome-file-list>
+  
+  <context-param>
+  <param-name>cname</param-name>
+  <param-value>jsp</param-value>
+  </context-param>
+  
+</web-app>
